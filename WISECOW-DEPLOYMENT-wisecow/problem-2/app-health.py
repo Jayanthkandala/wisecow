@@ -4,7 +4,7 @@ import urllib3
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-URL = "https://52.87.224.35:4499/"
+URL = "http://13.200.143.68:4499//"
 TIMEOUT = 5
 LOG_FILE = "health-check.log"
 
@@ -21,3 +21,4 @@ try:
         log_message(f"[{time.ctime()}] Application is DOWN. Status Code: {response.status_code}")
 except requests.exceptions.RequestException as e:
     log_message(f"[{time.ctime()}] Application is DOWN. Error: {e}")
+
