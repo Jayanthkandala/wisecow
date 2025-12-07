@@ -51,3 +51,4 @@ jobs:
         run: |
           kubectl apply --validate=false -f WISECOW-DEPLOYMENT-wisecow/k8s/deployment.yaml
           kubectl apply --validate=false -f WISECOW-DEPLOYMENT-wisecow/k8s/service.yaml
+          Use --validate=false in deploy step
